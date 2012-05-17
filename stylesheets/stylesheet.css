@@ -60,7 +60,8 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  /*font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;*/
+  font-family: 'Crimson Text', "Georgia", "Times", "Times New Roman", serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -108,6 +109,18 @@ footer p {
   color: #f2f2f2;
 }
 
+.footnotes p {
+  margin-bottom: 0px;
+  display: inline;
+  font-size: 14px; 
+}
+
+sup {
+  vertical-align: super;
+  font-size: 12px;
+}
+
+
 a {
   text-decoration: none;
   color: #007edf;
@@ -121,6 +134,10 @@ a {
   -o-transition: text-shadow 0.5s ease;
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
+}
+
+#project_title a {
+  color: #FFFFFF;
 }
 
 #main_content a:hover {
@@ -209,8 +226,22 @@ ul li {
 }
 
 ol li {
-  list-style: decimal inside;
-  padding-left: 20px;
+  list-style: decimal outside;
+  padding-left: 10px;
+}
+
+blockquote li {
+  list-style-position: inside;
+}
+
+li.chap {
+  font-weight: bold;
+}
+
+ol.prob li.prob {
+  list-style: none;
+  display: inline-block;
+  width: 1.5em;
 }
 
 dl dt {
